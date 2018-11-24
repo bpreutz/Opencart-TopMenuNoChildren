@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>TopMenuNoChildren</name>
+    <code>TopMenuNoChildren v0.1</code>
+    <version>0.1</version>
+    <author>Preutz Data Consult</author>
+    <link>http://www.preutz.se</link>
+    <file path="catalog/controller/common/header.php">
+         <operation>
+            <search><![CDATA[
+		$children = $this->model_catalog_category->getCategories($category['category_id']);
+            ]]></search>
+            <add position="replace" offset="13"><![CDATA[
+            ]]></add>
+        </operation>
+    </file>  
+</modification>
